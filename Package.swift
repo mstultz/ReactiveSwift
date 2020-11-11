@@ -7,7 +7,7 @@ let package = Package(
         .macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)
     ],
     products: [
-        .library(name: "ReactiveSwift", targets: ["ReactiveSwift"]),
+        .library(name: "ReactiveSwift", type: .dynamic, targets: ["ReactiveSwift"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Quick/Quick.git", from: "3.0.0"),
